@@ -1,32 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package stopwatch;
-
-//Program
-
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-
-public class StopWatch extends JPanel
-{
-	private Timer myTimer1;
-	public static final int ONE_SEC = 1000;   //time step in milliseconds
-	public static final int TENTH_SEC = 100;
-
-	private Font myClockFont;
-
-	private JButton startBtn, stopBtn, resetBtn;
-	private JLabel timeLbl;
-	private JPanel topPanel, bottomPanel;
-
-	private int clockTick;  	//number of clock ticks; tick can be 1.0 s or 0.1 s
-	private double clockTime;  	//time in seconds
-	private String clockTimeString;
-
 
 	public StopWatch()
 	{
@@ -78,52 +50,3 @@ public class StopWatch extends JPanel
 		});
 
 	}//end of StopWatch constructor
-
-	public void launchStopWatch()
-	{
-		topPanel = new JPanel();
-		topPanel.setBackground(Color.orange);
-		bottomPanel = new JPanel();
-		bottomPanel.setBackground(Color.yellow);
-		topPanel.add(timeLbl);
-		bottomPanel.add(startBtn);
-		bottomPanel.add(stopBtn);
-		bottomPanel.add(resetBtn);
-
-		this.setLayout(new BorderLayout());
-
-		add(topPanel, BorderLayout.CENTER);
-		add(bottomPanel, BorderLayout.SOUTH);
-
-		setSize(300,200);
-		setBackground(Color.orange);
-
-	}//end of launchClock
-
-	public static void main(String[] args)
-	{
-		MyTestFrame myTestFrame1 = new MyTestFrame();
-	}
-
-
-}//end of public class
-
-//Testing Code
-
-class MyTestFrame extends JFrame
-{
-	StopWatch StopWatch1;
-
-	public MyTestFrame()
-	{
-		super("My Stop Watch");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		Container myPane = getContentPane();
-
-		StopWatch1 = new StopWatch();
-		StopWatch1.launchStopWatch();
-		myPane.add(StopWatch1);
-		pack();
-		setVisible(true);
-	}
-}
