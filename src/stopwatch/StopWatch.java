@@ -9,18 +9,11 @@ package stopwatch;
  *
  * @author Jackson
  */
-/**
-public class StopWatch {
+//public class StopWatch {
 
-    /**
-     * @param args the command line arguments
-     */
-   // public static void main(String[] args) {
-        // TODO code application logic here
-   //    System.out.println("Sample program to manage stop watch with start stop and reset functions");
-    //}
+    //**
     
-}
+//}
 
 //public class start
 //{
