@@ -5,29 +5,7 @@
  */
 package stopwatch;
 
-/**
- *
- * @author Jackson
- */
-//public class StopWatch {
-
-    //**
-    
-//}
-
-//public class start
-//{
-  //  if (event.getsource() == start)
-    //{ 
-      //  timerSW.start();
-        //start.setBackground(color.GREEN);
-        //start.setText("Running");
-        //stop.setBackground(Color.lightGray);
-       // stop.setText("stop");
-    //}
-//} //
-//A simple clock application using javax.swing.Timer class
-
+//Program
 
 import java.awt.*;
 import java.awt.event.*;
