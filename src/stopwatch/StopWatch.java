@@ -16,6 +16,7 @@ public class StopWatch {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("Sample program to manage stop watch with start stop and reset functions");
     }
     
 }
