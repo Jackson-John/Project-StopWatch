@@ -2,29 +2,20 @@ package stopwatch;
 
 /// Stop watch Frame
 
-public void launchStopWatch()
+class MyTestFrame extends JFrame
+{
+	StopWatch StopWatch1;
+
+	public MyTestFrame()
 	{
-		topPanel = new JPanel();
-		topPanel.setBackground(Color.orange);
-		bottomPanel = new JPanel();
-		bottomPanel.setBackground(Color.yellow);
-		topPanel.add(timeLbl);
-		bottomPanel.add(startBtn);
-		bottomPanel.add(stopBtn);
-		bottomPanel.add(resetBtn);
+		super("My Stop Watch");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container myPane = getContentPane();
 
-		this.setLayout(new BorderLayout());
-
-		add(topPanel, BorderLayout.CENTER);
-		add(bottomPanel, BorderLayout.SOUTH);
-
-		setSize(300,200);
-		setBackground(Color.orange);
-
-	}//end of launchClock
-
-	public static void main(String[] args)
-	{
-		MyTestFrame myTestFrame1 = new MyTestFrame();
+		StopWatch1 = new StopWatch();
+		StopWatch1.launchStopWatch();
+		myPane.add(StopWatch1);
+		pack();
+		setVisible(true);
 	}
-
+}
