@@ -1,4 +1,4 @@
-package stopwatch;
+/**package stopwatch;
 
 /// 
 
@@ -124,3 +124,27 @@ class MyTestFrame extends JFrame
 		setVisible(true);
 	}
 }
+
+**/
+
+package StopWatch;
+import javax.swing.JFrame;
+Public class StopWatchMain {
+    /**
+     * 
+     * @param args 
+     */
+    public static void main(string[] args)
+    {
+        JFrame frame = new Jframe ("STOP WATCH");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(new StopWatchPanel());
+        frame.pack();
+        frame.setVisible(true);
+        System.out.println("Question three was called and ran successfully");
+        
+        
+    }
+}
+
+
